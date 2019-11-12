@@ -60,6 +60,14 @@ app.get('/bad', (req, res) => {
     errorMessage: 'an error has occerd please try again later'
   });
 });
+
+app.get('/projects', (req, res) =>{
+  res.render('projects.hbs', {
+    pageTitle: 'Projects page',
+    someText: 'lalalalalalalalalalalalalala'
+  });
+});
+
 app.listen(port, () => {
   console.log(`server is up on port ${port}`);
 });
